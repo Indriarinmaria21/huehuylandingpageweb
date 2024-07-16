@@ -1,0 +1,23 @@
+a.call-to-action{
+  color: hsl(176, 68%, 64%);
+  font-family:OpenSans;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.6em;
+  font-size: 1rem;
+  position: relative;
+}
+
+a.call-to-action:hover{
+  cursor:pointer;
+  color: white;
+}
+
+a.call-to-action:hover .arrow-icon use[fill="#62E0D9"] {
+  fill: white;
+}
+
+.arrow-icon{
+position:absolute;
+right: -2px;
+}

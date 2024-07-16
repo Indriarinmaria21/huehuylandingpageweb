@@ -1,0 +1,84 @@
+a.nav-button{
+    color:white;
+    font-family: Raleway;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1rem;
+}
+    
+a.nav-button:hover{
+    cursor:pointer;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* App.css */
+
+/* Tambahkan ini untuk mengatur dasar dari tombol navigasi */
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+}
+
+/* Tambahkan animasi hover untuk tombol navigasi */
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s;
+}
+
+.nav-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.nav-button:hover {
+  color: hsl(219, 30%, 18%); /* Warna teks berubah saat di-hover */
+}
+
+/* Footer.css */
+.footer-link {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .footer-button {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .footer-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Custom styles for different class names */
+  .custom-class-1 .footer-button {
+    color: #28a745;  /* Green color */
+  }
+  
+  .custom-class-2 .footer-button {
+    color: #dc3545;  /* Red color */
+  }
+  
+  .custom-class-1 .footer-button:hover {
+    text-decoration: underline;
+    color: #218838;  /* Darker green on hover */
+  }
+  
+  .custom-class-2 .footer-button:hover {
+    text-decoration: underline;
+    color: #c82333;  /* Darker red on hover */
+  }
+  

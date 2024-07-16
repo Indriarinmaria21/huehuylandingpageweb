@@ -1,0 +1,45 @@
+.location, .phone-contact, .email-contact, .footer-link{
+    color:white;
+    text-decoration: none;
+}
+
+.location:hover, .phone-contact:hover , .email-contact:hover, .footer-link:hover{
+    font-weight: 700 !important;
+}
+
+svg.icon-link:hover circle{
+    stroke:hsl(176, 68%, 64%) ;
+}
+
+svg.icon-link:hover path{
+    fill:hsl(176, 68%, 64%) ;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+input.input:focus{
+    outline: 3px solid  hsl(176, 68%, 64%);
+}
+
+.input-container{
+    position: relative;
+}
+
+.error{
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 0.625rem;
+    color:hsl(0, 100%, 63%);
+    position:absolute;
+    left:2.7vw;
+    top:3.3rem;
+}
