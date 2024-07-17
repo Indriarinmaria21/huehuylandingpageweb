@@ -1,5 +1,5 @@
 .location, .phone-contact, .email-contact, .footer-link{
-    color:white;
+    /* color:white; */
     text-decoration: none;
 }
 
@@ -7,13 +7,13 @@
     font-weight: 700 !important;
 }
 
-svg.icon-link:hover circle{
-    stroke:hsl(176, 68%, 64%) ;
-}
+/* svg.icon-link:hover circle{
+    /* stroke:hsl(176, 68%, 64%) ; */
+/* } */
 
-svg.icon-link:hover path{
-    fill:hsl(176, 68%, 64%) ;
-}
+/* svg.icon-link:hover path{
+    /* fill:hsl(176, 68%, 64%) ; */
+/* } */ */ */
 
 .visually-hidden{
     position: absolute;
@@ -43,3 +43,11 @@ input.input:focus{
     left:2.7vw;
     top:3.3rem;
 }
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 1rem; */
+    background-color: rgb(28,36,49);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }

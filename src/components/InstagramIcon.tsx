@@ -1,12 +1,14 @@
-import "./Footer.css";
-const InstagramIcon = () => {
+import React from 'react';
+import './Footer.css';
+
+const InstagramIcon: React.FC = () => {
   return (
-    <a href="#">
+    <a href="https://www.instagram.com/huehuyofficial.id/" target="_blank" rel="noopener noreferrer" className="instagram-link">
       <svg
         className="icon-link"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
-        style={{ width: "31.2px", height: "auto", marginLeft: "12.5px" }}
+        style={{ width: '50px', height: 'auto', marginRight: '12.5px' }} // Mengubah marginLeft menjadi marginRight
       >
         <circle
           cx="256"
@@ -27,6 +29,7 @@ const InstagramIcon = () => {
           d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
         />
       </svg>
+      <span>huehuyofficial.id</span>
       <span className="visually-hidden">Instagram Icon Link</span>
     </a>
   );

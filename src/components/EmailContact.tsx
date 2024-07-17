@@ -1,10 +1,12 @@
 import EmailIcon from "./EmailIcon";
 import "./Footer.css";
+
 interface Props {
   children: string;
+  email: string; // Tambahkan properti email untuk menentukan alamat email
 }
 
-const EmailContact = ({ children }: Props) => {
+function EmailContact({ children, email }: Props) {
   return (
     <div
       style={{
@@ -23,7 +25,7 @@ const EmailContact = ({ children }: Props) => {
         <EmailIcon />
       </div>
       <a
-        href="#"
+        href={`mailto:${email}`} // Mengatur href untuk membuka klien email dengan alamat email
         className="email-contact"
         style={{
           fontFamily: "OpenSans",
@@ -35,6 +37,6 @@ const EmailContact = ({ children }: Props) => {
       </a>
     </div>
   );
-};
+}
 
 export default EmailContact;

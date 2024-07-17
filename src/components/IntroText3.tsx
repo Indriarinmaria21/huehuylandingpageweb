@@ -10,17 +10,19 @@ interface Props {
 const IntroText3: React.FC<Props> = ({ heading, content, imageSrc}) => {
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1
-        style={{
-          fontFamily: 'Raleway',
-          fontWeight: '700',
-          fontSize: '2.7rem',
-          width: '100%',
-          lineHeight: '1.5',
-        }}
-      >
-        {heading}
-      </h1>
+    <h1
+      style={{
+        fontFamily: 'Raleway',
+        fontWeight: '700',
+        fontSize: '2.7rem',
+        width: '100%',
+        lineHeight: '1.5',
+        textAlign: 'center' // Added text alignment to center the heading
+      }}
+    >
+      {heading}
+    </h1>
+
 
       <img
         src={imageSrc}

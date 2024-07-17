@@ -1,4 +1,4 @@
-import IntroPictureSrc from "C:/Users/rinbe/Downloads/huehuylandingpage/huehuylandingpage/src/assets/images/bg.png";
+import IntroPictureSrc from "C:/Users/rinbe/Downloads/huehuylandingpage/huehuylandingpage/src/assets/images/vid.mp4";
 const IntroPicture = () => {
   return (
     <img

@@ -1,22 +1,66 @@
+// import React from 'react';
+// import './Footer.css';
+
+// interface NavButtonProps {
+//   children: string;
+//   targetId: string;
+//   backgroundColor?: string;
+// }
+
+// const NavButton: React.FC<NavButtonProps> = ({ children, targetId }) => {
+//   const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+//     event.preventDefault();
+//     const element = document.getElementById(targetId);
+//     if (element) {
+//       element.scrollIntoView({ behavior: 'smooth' });
+//     }
+//   };
+
+//   return (
+//     <div style={{ marginBottom: '0.85rem' }}>
+//       <button
+//         className="nav-button"
+//         onClick={handleClick}
+//         style={{
+//           fontFamily: 'OpenSans',
+//           fontWeight: '400',
+//           fontSize: '1rem',
+//           // backgroundColor: backgroundColor,
+//           border: 'none',
+//           cursor: 'pointer',
+//           padding: 0,
+//           textAlign: 'left',
+//             // color: 'inherit',
+//         }}
+//       >
+//         {children}
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default NavButton;
+
 import React from 'react';
-import './Footer.css';
+import './NavButton.css';
 
 interface NavButtonProps {
   children: string;
-  href: string;
+  targetId: string;
+  // backgroundColor: string;
 }
 
-const NavButton: React.FC<NavButtonProps> = ({ children, href }) => {
+const NavButton: React.FC<NavButtonProps> = ({ children, targetId }) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     event.preventDefault();
-    const element = document.getElementById(href);
+    const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   return (
-    <div style={{ marginBottom: '0.85rem' }}>
+    <div style={{ marginBottom: '0.55rem' }}>
       <button
         className="nav-button"
         onClick={handleClick}
@@ -24,12 +68,12 @@ const NavButton: React.FC<NavButtonProps> = ({ children, href }) => {
           fontFamily: 'OpenSans',
           fontWeight: '400',
           fontSize: '1rem',
-          backgroundColor: 'transparent',
           border: 'none',
           cursor: 'pointer',
           padding: 0,
           textAlign: 'left',
           color: 'inherit',
+          backgroundColor:'black'
         }}
       >
         {children}

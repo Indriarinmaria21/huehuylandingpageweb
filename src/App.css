@@ -26,7 +26,7 @@ nav{
 }
 
 .nav-bar{
-    width: 283px;
+    width: 280px;
     display:flex;
     justify-content: space-between;
 }
@@ -118,6 +118,8 @@ nav{
     z-index: 1;
     display: flex;
     justify-content: space-between; 
+    background-color: #08512f; /* Warna latar belakang konten card */
+
 }
 
 @media screen and (max-width: 1345px) {
@@ -201,7 +203,7 @@ nav{
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 25px;
     position:absolute;
     bottom: 1rem;
     left: 50%;
@@ -210,7 +212,7 @@ nav{
 }
 
 .attribution a {
-    color:  hsl(216, 53%, 50%);
+    color:  hsl(0, 57%, 56%);
 }
 
 .partner-card {
@@ -260,6 +262,7 @@ nav{
     box-shadow: 5px 5px 5px 5px hsl(217, 28%, 15%);
     align-items: center;
     gap: 1rem;
+    background-color: #08512f; /* Warna latar belakang konten card */
   }
   
   .testimonial-card-message {
@@ -274,11 +277,14 @@ nav{
     height: 50px;
     border-radius: 25px;
     object-fit: cover;
+    background-color: #08512f; /* Warna latar belakang konten card */
   }
   
   .testimonial-card-content {
     display: flex;
     flex-direction: column;
+    background-color: #08512f; /* Warna latar belakang konten card */
+
   }
   
   .testimonial-card-name {
@@ -292,7 +298,7 @@ nav{
     font-family: OpenSans;
     font-weight: 400;
     font-size: 0.49rem;
-    color: hsl(0, 0%, 75%);
+    color: hsl(0, 100%, 85%);
   }
   
   .card-container {
@@ -301,25 +307,14 @@ nav{
     align-items: center;
     margin: 20px;
   }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
-    transition: transform 0.2s;
-  }
-  
-  .card:hover {
+  .card:ho  ver {
     transform: scale(1.05);
   }
   
   .card img {
     border-radius: 8px 8px 0 0;
     width: 100%;
+    background-color: #08512f; /* Warna latar belakang konten card */
   }
   
   .card h3 {
@@ -329,7 +324,7 @@ nav{
   
   .card p {
     font-size: 1em;
-    color: #666;
+    color: #ffffff;
   }
   .App {
     text-align: center;
@@ -349,6 +344,42 @@ nav{
   
   .nav-button:hover {
     text-decoration: underline;
+  }
+  /* Add these styles to your CSS file */
+
+.intro-text-section {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .intro-text-container {
+    margin-bottom: 2rem;
+  }
+  
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 1rem; */
+    background-color: rgb(28,36,49);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1rem;
+    /* background-color: teal;  */
+    color: darkslategrey;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: darkslategray;
+  }
+  
+  section {
+    padding-top: 60px;
   }
   
 

@@ -1,84 +1,106 @@
-a.nav-button{
-    color:white;
-    font-family: Raleway;
-    font-weight: 400;
-    text-decoration: none;
-    font-size: 1rem;
+/* a.nav-button Styles */
+
+/* Mengatur dasar dari link nav-button */
+a.nav-button {
+  color: rgb(0, 0, 0); /* Warna teks hitam */
+  font-family: Raleway; /* Menggunakan font Raleway */
+  font-weight: 400; /* Berat font normal */
+  text-decoration: none; /* Menghapus garis bawah pada teks */
+  font-size: 1rem; /* Ukuran font 1 rem */
 }
-    
-a.nav-button:hover{
-    cursor:pointer;
-    text-decoration: underline;
-    font-weight: 700;
+
+/* Mengatur gaya saat hover pada link nav-button */
+a.nav-button:hover {
+  cursor: pointer; /* Menampilkan kursor pointer */
+  text-decoration: underline; /* Menambahkan garis bawah pada teks */
+  font-weight: 700; /* Mengubah berat font menjadi bold */
 }
 
 /* App.css */
 
-/* Tambahkan ini untuk mengatur dasar dari tombol navigasi */
+/* Mengatur dasar dari tombol navigasi */
 .nav-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.4s;
+background-color: transparent; /* Latar belakang transparan */
+border: none; /* Menghapus border */
+color: rgb(141, 53, 53); /* Warna teks merah tua */
+font-size: 1rem; /* Ukuran font 1 rem */
+cursor: pointer; /* Menampilkan kursor pointer */
+padding: 0.5rem 1rem; /* Padding atas-bawah 0.5rem, kiri-kanan 1rem */
+position: relative; /* Posisi relatif untuk elemen pseudo */
+overflow: hidden; /* Menyembunyikan elemen yang meluap */
+transition: color 0.4s; /* Animasi transisi warna selama 0.4 detik */
 }
 
-/* Tambahkan animasi hover untuk tombol navigasi */
+/* Menambahkan animasi hover untuk tombol navigasi */
 .nav-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.5s;
+content: ''; /* Konten kosong untuk elemen pseudo */
+position: absolute; /* Posisi absolut relatif ke tombol */
+top: 50%; /* Posisi vertikal di tengah */
+left: 50%; /* Posisi horizontal di tengah */
+width: 300%; /* Lebar elemen 300% dari tombol */
+height: 300%; /* Tinggi elemen 300% dari tombol */
+background-color: rgba(255, 255, 255, 0.1); /* Latar belakang putih transparan */
+transform: translate(-50%, -50%) scale(0); /* Skala awal 0 di tengah */
+transition: transform 0.5s; /* Animasi transisi transformasi selama 0.5 detik */
 }
 
+/* Mengatur transformasi elemen pseudo saat hover pada tombol navigasi */
 .nav-button:hover::before {
-  transform: translate(-50%, -50%) scale(1);
+transform: translate(-50%, -50%) scale(1); /* Skala elemen pseudo menjadi 1 */
 }
 
+/* Mengubah warna teks saat hover pada tombol navigasi */
 .nav-button:hover {
-  color: hsl(219, 30%, 18%); /* Warna teks berubah saat di-hover */
+color: hsl(219, 30%, 18%); /* Warna teks menjadi abu-abu tua */
 }
 
 /* Footer.css */
+
+/* Mengatur dasar dari link footer-link */
 .footer-link {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  .footer-button {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  .footer-button:hover {
-    text-decoration: underline;
-  }
-  
-  /* Custom styles for different class names */
-  .custom-class-1 .footer-button {
-    color: #28a745;  /* Green color */
-  }
-  
-  .custom-class-2 .footer-button {
-    color: #dc3545;  /* Red color */
-  }
-  
-  .custom-class-1 .footer-button:hover {
-    text-decoration: underline;
-    color: #218838;  /* Darker green on hover */
-  }
-  
-  .custom-class-2 .footer-button:hover {
-    text-decoration: underline;
-    color: #c82333;  /* Darker red on hover */
-  }
-  
+color: #ffffff; /* Warna teks biru */
+text-decoration: none; /* Menghapus garis bawah pada teks */
+}
+
+/* Mengatur dasar dari tombol footer-button */
+.footer-button {
+color: #cd3535; /* Warna teks biru */
+text-decoration: none; /* Menghapus garis bawah pada teks */
+}
+
+/* Mengatur gaya saat hover pada tombol footer-button */
+.footer-button:hover {
+text-decoration: underline; /* Menambahkan garis bawah pada teks */
+}
+
+/* Custom styles for different class names */
+
+/* Gaya khusus untuk custom-class-1 pada tombol footer-button */
+.custom-class-1 .footer-button {
+color: #28a745; /* Warna hijau */
+}
+
+/* Gaya khusus untuk custom-class-2 pada tombol footer-button */
+.custom-class-2 .footer-button {
+color: #dc3545; /* Warna merah */
+}
+
+/* Gaya khusus saat hover untuk custom-class-1 pada tombol footer-button */
+.custom-class-1 .footer-button:hover {
+text-decoration: underline; /* Menambahkan garis bawah pada teks */
+color: #218838; /* Warna hijau lebih gelap saat hover */
+}
+
+/* Gaya khusus saat hover untuk custom-class-2 pada tombol footer-button */
+.custom-class-2 .footer-button:hover {
+text-decoration: underline; /* Menambahkan garis bawah pada teks */
+color: #c82333; /* Warna merah lebih gelap saat hover */
+}
+
+/* Mengatur gaya dasar dari tombol navigasi dengan prioritas tinggi */
+.nav-button {
+background-color: transparent !important; /* Latar belakang transparan dengan prioritas tinggi */
+border: none !important; /* Menghapus border dengan prioritas tinggi */
+padding: 0 !important; /* Menghapus padding dengan prioritas tinggi */
+color: inherit !important; /* Mengambil warna teks dari elemen induk dengan prioritas tinggi */
+}
