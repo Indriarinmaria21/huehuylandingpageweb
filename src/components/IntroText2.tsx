@@ -1,14 +1,12 @@
-import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 interface CardProps {
-  heading: string;
   pic: string;
 }
 
-function Card({ heading, pic }: CardProps) {
+function Card({ pic }: CardProps) {
   return (
     <div
       style={{
@@ -40,11 +38,11 @@ function Card({ heading, pic }: CardProps) {
 }
 
 interface IntroText2Props {
-  heading: string;
   pics: string[];
+  heading : string
 }
 
-function IntroText2({ heading, pics }: IntroText2Props) {
+function IntroText2({heading, pics }: IntroText2Props) {
   const settings = {
     dots: true,
     infinite: true,
@@ -68,9 +66,9 @@ function IntroText2({ heading, pics }: IntroText2Props) {
       >
         {heading}
       </h1>
-      <Slider {...settings} style={{ marginTop: "20px" }}>
+      <Slider {...settings} >
         {pics.map((pic, index) => (
-          <Card key={index} heading={`Card ${index + 1}`} pic={pic} />
+          <Card key={index}  pic={pic} />
         ))}
       </Slider>
     </div>

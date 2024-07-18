@@ -1,5 +1,4 @@
 // src/components/IntroVideo.tsx
-import React from 'react';
 
 const IntroVideo = () => {
   return (

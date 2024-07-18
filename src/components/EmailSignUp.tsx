@@ -1,15 +1,13 @@
 import { ChangeEvent, FormEvent, useState } from "react";
-import Button from "./Button";
 import validateEmail from "../utils/validateEmail";
 import "./Footer.css";
 
 interface Props {
   heading: string;
   message: string;
-  buttonText: string;
 }
 
-const EmailSignUp = ({ heading, message, buttonText }: Props) => {
+const EmailSignUp = ({ heading, message,  }: Props) => {
   const [emailValue, setEmailValue] = useState("");
 
   function handleInput(event: ChangeEvent<HTMLInputElement>) {
@@ -89,9 +87,7 @@ const EmailSignUp = ({ heading, message, buttonText }: Props) => {
             {error && <p className="error ">{error}</p>}
           </div>
 
-          <Button width="13.74vw" heightInRem={3} fontSize="0.89rem">
-            {buttonText}
-          </Button>
+   
         </div>
       </form>
     </div>

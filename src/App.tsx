@@ -1,28 +1,12 @@
-import React from 'react';
 import "./App.css";
-import AnywhereIcon from "./components/AnywhereIcon";
 import BodyText from "./components/BodyText";
-import CollaborationIcon from "./components/CollaborationIcon";
-import FeatureCard from "./components/FeatureCard";
 import IntroText from "./components/IntroText";
 import IntroVideo from "./components/IntroVideo";
 import Logo from "./components/Logo";
 import NavButton from "./components/NavButton";
-import BodyPicture from "./components/BodyPicture";
-import SecurityIcon from "./components/SecurityIcon";
-import StoreIcon from "./components/StoreIcon";
-import TestimonialCard from "./components/TestimonialCard";
-import BigQuotes from "./components/BigQuotes";
-import Location from "./components/Location";
 import PhoneContact from "./components/PhoneContact";
 import EmailContact from "./components/EmailContact";
-import FooterLink from "./components/FooterLink";
-import TwitterIcon from "./components/TwitterIcon";
 import InstagramIcon from "./components/InstagramIcon";
-import FacebookIcon from "./components/FacebookIcon";
-import Profile1 from "../src/assets/images/profile-1.jpg";
-import Profile2 from "../src/assets/images/profile-2.jpg";
-import Profile3 from "../src/assets/images/profile-3.jpg";
 import IntroText2 from "./components/IntroText2";
 import Card from './components/Card';
 import IntroText3 from './components/IntroText3';
@@ -123,7 +107,7 @@ const App = () => {
         <div className="footer-items">
           <div>
             <PhoneContact>+6287822016661</PhoneContact>
-            <EmailContact>huehuy.socmed@gmail.com</EmailContact>
+            <EmailContact email={"huehuy.socmed@gmail.com"}></EmailContact>
           </div>
           {/* <div>
             <FooterLink>Home</FooterLink>

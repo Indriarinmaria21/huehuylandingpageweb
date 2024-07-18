@@ -2,11 +2,10 @@ import EmailIcon from "./EmailIcon";
 import "./Footer.css";
 
 interface Props {
-  children: string;
   email: string; // Tambahkan properti email untuk menentukan alamat email
 }
 
-function EmailContact({ children, email }: Props) {
+function EmailContact({email}: Props) {
   return (
     <div
       style={{
@@ -33,7 +32,7 @@ function EmailContact({ children, email }: Props) {
           fontSize: "0.875rem",
         }}
       >
-        {children}
+        {email}
       </a>
     </div>
   );
