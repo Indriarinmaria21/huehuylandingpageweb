@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 @font-face {
     font-family:Raleway ;
     src: url(./assets/fonts/Raleway-VariableFont_wght.ttf);
@@ -383,7 +386,6 @@ nav{
   }
   
 
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+
 
     
