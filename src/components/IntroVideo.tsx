@@ -4,7 +4,7 @@ const IntroVideo = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <video
-        src="src\assets\images\vid3.mp4"
+        src="src/assets/images/vid3 copy.mp4"
         controls
         autoPlay
         muted

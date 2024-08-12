@@ -11,6 +11,7 @@ import IntroText2 from "./components/IntroText2";
 import Card from './components/Card';
 import IntroText3 from './components/IntroText3';
 
+
 const App = () => {
   return (
     <div className="app">
@@ -31,8 +32,8 @@ const App = () => {
         <div id="about-section" className="intro-text-section">
           <div className="intro-text-container">
             <IntroText
-              heading="Smart advertising, Smart result"
-              content="Dapatkan Hasil Cerdas dengan Iklan Pintar. Tingkatkan visibilitas bisnis Anda dan raih target pasar yang tepat dengan strategi iklan pintar kami. Gabungkan teknologi dan kreativitas untuk hasil yang maksimal! Bergabunglah dengan platform kami dan saksikan bisnis Anda berkembang pesat!"
+              heading="Smart Advertising, Smart Result"
+              content="Dapatkan hasil cerdas dengan iklan pintar, tingkatkan visibilitas."
               buttonText1="PlayStore"
               buttonUrl1='https://play.google.com/store/apps/details?id=com.huehuy.app.twa&pcampaignid=web_share'
               buttonText2='Website'
@@ -45,10 +46,10 @@ const App = () => {
             <IntroText2
               heading="Our Partner"
               pics={[
-                "src/assets/images/UNPAR_LOGO.svg.png",
-                "src/assets/images/bank-mandiri-seeklogo.svg",
-                "src/assets/images/itb.svg",
-                "src/assets/images/halosis.svg"
+                "/images/UNPAR_LOGO.svg.png",
+                "http://localhost:3000/assets/images/UNPAR_LOGO.svg.png",
+                "http://localhost:3000/assets/images/itb.svg",
+                "http://localhost:3000/assets/images/halosis.svg"
               ]}
             />
           </div>
@@ -56,42 +57,42 @@ const App = () => {
         <div className="body">
           <div className="body-text">
             <BodyText
-              heading="Apa itu DUNIA UMUM dan DUNIA KOMUNITAS?"
+              heading="Apa itu DUNIA UMUM dan DUNIA KHUSUS (KOMUNITAS)?"
               content={
                 <div>
                   <p>Dunia Umum itu apa yaa?</p>
-                  <p>Dunia Umum adalah dunia yang bisa diakses oleh semua pengguna Huehuy Apps tanpa perlu akses khusus. Di dalam Dunia Umum, kamu bisa menjelajahi semua promosi yang tersedia. Menarik bukan?? Ayoo segera jelajahi dunia umum hanya di Huehuy Apps, dan ambil promo yang kamu suka, Sekarang!!</p>
-                  <p>Laluu, Dunia Komunitas ituu apa yaa?</p>
-                  <p>Ini dunia khusus komunitas kamu! Di dunia komunitas ini, hanya bisa diakses oleh kamu dan member komunitas. khusus dunia komunitas, kamu bisa mendapatkan promo yang lebih banyak dan ekslusif untuk member komunitas kamu.</p>
+                  <p>Dunia Umum adalah dunia yang bisa diakses oleh semua pengguna HUEHUY tanpa perlu verifikasi ke dalam komunitas kamu . Di dalam Dunia Umum, kamu bisa menjelajahi semua promosi yang tersedia. Menarik bukan?? Ayoo segera jelajahi dunia umum hanya di Huehuy Apps, dan ambil promo yang kamu suka, Sekarang!!</p>
+                  <p>Apa itu dunia Khusus (Komunitas) </p>
+                  <p>Ini dunia khusus hanya untuk member dunia komunitas kamu. Di Dunia Khusus (Komunitas) ini hanya bisa diakses oleh member dari komunitas yang sudah di verifikasi. Dapatkan promo yang lebih menarik dan ekslusif yang diberikan oleh merchant di dalam komunitas kamu, yang mungkin tidak bisa didapatkan oleh pengguna umum lainnya. Ayo ajak komunitas kamu bergabung dengan HUEHUY.</p>
                 </div>
               }
-              callToAction="how Huehuy works"
+              callToAction="how HUEHUY works"
             />
           </div>
         </div>
         <div className="body">
           <h1>KUBUS</h1>
           <div style={{ maxWidth: "60rem" }}>
-            <p style={{ fontFamily: "OpenSans", fontWeight: "800", fontSize: "1rem", marginBottom: "1.4rem" }}>Kubus adalah virtual billboard yang bisa kamu miliki. di dalam kubus kamu bisa menyimpan promo dari toko kamu dan bisa dilihat oleh pengguna huehuy</p>
+            <p style={{ fontFamily: "OpenSans", fontWeight: "800", fontSize: "1rem", marginBottom: "1.4rem" }}>Kubus adalah virtual billboard yang bisa kamu miliki. Di dalam kubus kamu bisa menyebarkan promo toko, ,memasarkan marketplace, dan mempromosikan social media platform milik kamu dengan cara yang unik dan mudah.</p>
           </div>
           <div className="card-container">
             <Card 
-              title="KUPU (KUBUS PUTIH)"
-              description="Dapat menyimpan ads/ NO ADS FREE, tidak ada logo perusahaan"
-              image="src/assets/images/profile-1.png"
+              title="KuPU (KUBUS PUTIH)"
+              description="Kubus dengan iklan yang diliat oleh pengguna, Kubus dengan iklan yang diliat oleh pengguna"
+              image="http://localhost:3000/assets/images/profile-1.png"
             />
             <Card
-              title="KUME (KUBUS MERAH)"
-              description="Tidak dapat menyimpan ADS / ADS FREE, ada logo perusahaan"
-              image="src/assets/images/profile-21.png"
+              title="KuME (KUBUS MERAH)"
+              description="Kubus dengan iklan yang diliat oleh pengguna, Menampilkan logo perusahaan kamu."
+              image="http://localhost:3000/assets/images/profile-21.png"
             />
           </div>
           <div className="intro-text-section">
             <div className="intro-text-container">
               <IntroText3
                 heading="COMPANY PROFILE"
-                content="Huehuy adalah sebuah platform periklanan yang menggunakan aktivitas, objek  dan lokasi berdasarkan GPS di dunia nyata untuk memasang, mencari atau menyebarkan iklan secara digital. Dilengkapi berbagai fitur untuk mensinkronisasi, mengoptimalkan dan memberi nilai tambah pada iklan dengan tujuan meningkatkan efektivitas iklan agar dapat sedekat mungkin dengan sasaran atau target yang menjadi alasan iklan tersebut dipasang."
-                imageSrc='src/assets/images/logo.png'
+                content="HUEHUY adalah sebuah platform periklanan yang menggunakan aktivitas, objek  dan lokasi berdasarkan GPS di dunia nyata untuk memasang, mencari atau menyebarkan iklan secara digital. Dilengkapi berbagai fitur untuk mensinkronisasi, mengoptimalkan dan memberi nilai tambah pada iklan dengan tujuan meningkatkan efektivitas iklan agar dapat sedekat mungkin dengan sasaran atau target yang menjadi alasan iklan tersebut dipasang."
+                imageSrc="src/assets/images/logo.png"
               />
             </div>
             <p style={{ textAlign: 'center', fontFamily: 'OpenSans', fontWeight: '700', fontSize: '1rem', marginTop: '1rem' }}>

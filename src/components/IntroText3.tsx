@@ -27,7 +27,7 @@ const IntroText3: React.FC<Props> = ({ heading, content, imageSrc}) => {
         src={imageSrc}
         alt="Intro Image"
         style={{
-          width: '30%',
+          width: '50%',
           height: 'auto',
           marginTop: '1rem',
         }}
